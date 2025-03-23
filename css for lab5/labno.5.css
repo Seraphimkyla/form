@@ -1,0 +1,111 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('anime.jpg') no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* Wrapper for Login Box */
+.wrapper {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    width: 200%;
+}
+
+/* Signup Box */
+.signup_box {
+    width: 100%;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/* Title */
+.signup_box span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.info_box {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 90%;
+    }
+    
+    .signup_box {
+        padding: 20px;
+    }
+    
+    .input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
